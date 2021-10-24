@@ -18,20 +18,23 @@ public class BattleManager : MonoBehaviour
     void Start()
     {
         allPlayers = FindObjectsOfType<Rat>();
+        Debug.Log(allPlayers.Length);
         if (allPlayers[0] != null) {
             player1 = allPlayers[0];
         }
         if (allPlayers[1] != null) {
             player2 = allPlayers[1];
         }
-        if (allPlayers[2] != null) {
-            player3 = allPlayers[2];
-        }
-        if (allPlayers[3] != null) {
-            player4 = allPlayers[3];
-        }
+        //if (allPlayers[2] != null)
+        //{
+        //    player3 = allPlayers[2];
+        //}
+        //if (allPlayers[3] != null)
+        //{
+        //    player4 = allPlayers[3];
+        //}
 
-        hpStyle.fontSize = 80;
+        //hpStyle.fontSize = 80;
     }
 
     // Update is called once per frame
