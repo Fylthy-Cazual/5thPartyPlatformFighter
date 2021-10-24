@@ -45,7 +45,7 @@ public class Rat : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public virtual void Update()
     {
         if (!action)
         {
@@ -150,7 +150,7 @@ public class Rat : MonoBehaviour
         }
     }
 
-    public void special()
+    public virtual void special()
     {
         StartCoroutine(specialG());
     }
