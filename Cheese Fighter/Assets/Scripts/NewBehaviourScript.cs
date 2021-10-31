@@ -20,10 +20,10 @@ public class NewBehaviourScript : Rat
     }
     public override void special()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             Debug.Log("poop");
-            StartCoroutine(specialU());
+            //StartCoroutine(specialU());
         }
         else
         {
@@ -38,17 +38,17 @@ public class NewBehaviourScript : Rat
     }
 
 
-    IEnumerator specialU()
-    {
-        action = true;
-        animator.SetTrigger("Jab-Air");
-        for (int i = 0; i < 24; i++)
-        {
-            rb.velocity = new Vector3(0f, 0f, 0f);
-            yield return Utils.Frames(1);
-        }
-        teleport(0, 0);
-        action = false;
-        animator.SetTrigger("Return");
-    }
+    //IEnumerator specialU()
+    //{
+    //    action = true;
+    //    //animator.SetTrigger("Jab-Air");
+    //    //for (int i = 0; i < 24; i++)
+    //    //{
+    //    //    rb.velocity = new Vector3(0f, 0f, 0f);
+    //    //    yield return Utils.Frames(1);
+    //    //}
+    //    teleport(transform.position.x, transform.position.y+5);
+    //    action = false;
+    //    //animator.SetTrigger("Return");
+    //}
 }

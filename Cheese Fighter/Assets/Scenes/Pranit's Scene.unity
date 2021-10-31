@@ -863,7 +863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 710ec45d24b9e4e06a56fe016863af48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: newrat
+  name: TestRat
   hp: 3
   speed: 10
   weight: 1
