@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Rat : MonoBehaviour
+public class Rat : MonoBehaviour 
 {
     public string name;
     
@@ -129,7 +129,7 @@ public class Rat : MonoBehaviour
 
     #endregion
 
-    #region attack
+    #region attack 
 
     public void jab()
     {
